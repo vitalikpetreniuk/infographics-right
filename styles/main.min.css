@@ -3391,6 +3391,12 @@ p:not(:last-child) {
     border: 1px solid #8a8a8a
 }
 
+.lr-popup .lrp-inner .lrp-go:hover
+{
+    box-shadow: -1px 0 1px 1px #3c3d43;
+}
+
+
 .lr-popup .lrp-inner .lrp-go.go-up {
     top: -75px;
     background: url(../img/icons/go-right.svg) no-repeat center;
@@ -3421,6 +3427,11 @@ p:not(:last-child) {
     transform: translateY(-50%)
 }
 
+.lr-popup .lrp-inner .lrp-go.go-left:hover
+{
+    box-shadow: 1px 0 1px 1px #3c3d43;
+}
+
 .lr-popup .lrp-inner .lrp-go.go-right {
     right: -75px;
     background: url(../img/icons/go-right.svg) no-repeat center;
@@ -3429,6 +3440,19 @@ p:not(:last-child) {
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%)
+}
+.lr-popup .lrp-inner .lrp-go.go-up:hover,
+.lr-popup .lrp-inner .lrp-go.go-down:hover,
+.lr-popup .lrp-inner .lrp-go.go-right:hover
+{
+    background: url(../img/icons/go-right-hover.png) no-repeat 17px center;
+}
+.lr-popup .lrp-inner .lrp-go.go-left:hover
+{
+    background: url(../img/icons/go-right-hover.png) no-repeat 17px center;
+    -webkit-transform: translateY(-50%) rotate(180deg);
+    -ms-transform: translateY(-50%) rotate(180deg);
+    transform: translateY(-50%) rotate(180deg);
 }
 
 .lr-popup .lrp-content {

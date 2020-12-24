@@ -465,7 +465,7 @@ a.r_table img {
 .r_page .gradient_bg {
 	background: url("../images_r/bg_color.png") no-repeat center center;
 	background-size: cover;
-	padding: 85px 0 185px;
+	padding: 85px 0 216px;
 	position: relative;
 }
 .r_page .gradient_bg:after {
@@ -474,7 +474,7 @@ a.r_table img {
 	bottom: -1px;
 	left: 0;
 	right: 0;
-	height: 80px;
+	height: 68px;
 	width: 100%;
 	background: url("../images_r/bg_small_line.svg") no-repeat bottom  right -400px;
 	background-size: contain;
@@ -499,6 +499,10 @@ a.r_table img {
 }
 .r_page .r_text p {
 	margin-bottom: 28px;
+}
+.r_page .r_text p:last-child
+{
+	margin-bottom: 0;
 }
 .r_part {
 	width: 40px;
@@ -544,8 +548,7 @@ a.r_table img {
 /*difference*/
 
 .r_difference {
-	padding-top: 142px;
-	padding-bottom: 150px;
+	padding: 150px 0 60px;
 }
 .r_difference .r_text {
 	color: #3c3d43;
@@ -577,7 +580,7 @@ a.r_table img {
 
 .r_representatives_list {
 	position: relative;
-	padding-top: 135px;
+	padding-top: 200px;
 	padding-bottom: 150px;
 }
 .r_representatives_list .r_title--ss {
@@ -742,10 +745,15 @@ a.r_table img {
 .r_page .r_parallel:after {
 	bottom: initial;
 	top: -1px;
-	background-image: url('../images_r/bg_top_line.svg');
+	background: url('../img/bg_small_line.png') no-repeat bottom right;
 	left: 0;
 	right: 0;
-	height: 70px;
+	height: 68px;
+}
+#parallels
+{
+	padding-top: 161px;
+	padding-bottom: 150px;
 }
 .scrollbar-parent {
 	height: 498px;
@@ -861,7 +869,7 @@ a.r_table img {
 
 .r_history {
 	padding-top: 150px;
-	padding-bottom: 150px;
+	padding-bottom: 100px;
 	width: 100%;
 	overflow: hidden;
 }
@@ -1090,7 +1098,7 @@ a.r_table img {
 
 /*factors*/
 .r_factors {
-	padding-top: 93px;
+	padding-top: 90px;
 	padding-bottom: 150px;
 }
 .r_factors .r_title--ss {
@@ -1116,11 +1124,16 @@ a.r_table img {
 	font-family: "MuseoSansCyrl-500", sans-serif;
 	text-align: left;
 }
+.r_factors_text span
+{
+	color: #3c3d43;
+	font-size: 14px;
+}
 
 /*compare*/
 .r_compare {
-	padding-top: 140px;
-	padding-bottom: 140px;
+	padding-top: 150px;
+	padding-bottom: 150px;
 }
 .r_compare_item,
 .r_compare_header {
@@ -1153,7 +1166,8 @@ a.r_table img {
 .r_compare .r_col_right {
 	background: #f4f4f4;
 	align-self: stretch;
-	padding: 30px 68px 22px;
+	padding: 30px 20px 22px;
+	text-align: center;
 }
 .r_compare_links {
 	text-align: center;
@@ -1247,6 +1261,19 @@ a.r_table img {
 	margin-bottom: 100px;
 }
 
+.r_page .r_liberalism.gradient_bg:after
+{
+	content: '';
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+	right: 0;
+	height: 68px;
+	width: 100%;
+	background: url(../img/bg_small_line_2.png) no-repeat bottom left;
+	background-size: contain;
+}
+
 .r_representatives_list .r_red {
 	font-family: "MuseoSansCyrl-700", sans-serif;
 }
@@ -1289,7 +1316,12 @@ a.r_table img {
 	background-position: top -1px right 0;
 }
 .r_page .gradient_bg.r_parallel_2 {
-	padding-bottom: 148px;
+	padding-top: 168px;
+	padding-bottom: 150px;
+}
+#r_factors_3 .r_factors_text
+{
+	margin-bottom: 0;
 }
 .r_page .r_parallel_2 .r_title {
 	margin-bottom: 40px;
@@ -1316,8 +1348,8 @@ a.r_table img {
 
 	width: 1px;
 
-	-webkit-transform: translateX(-50%);
-	transform: translateX(-50%);
+	-webkit-transform: translateX(-100%);
+	transform: translateX(-100%);
 	background: rgba(255,255,255,0.2);
 }
 .r_parallel_2 .table-remaked .r_parallel_td:last-child .r_parallel_line
@@ -1335,6 +1367,32 @@ a.r_table img {
 .r_parallel_2 .table-remaked .r_parallel_thead
 {
 	margin-bottom: 30px;
+}
+.r_parallel_2 .r_th
+{
+	position: relative;
+}
+.r_parallel_2 .r_th:nth-child(2):before
+{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 100%;
+	height: 30px;
+	left: -1px;
+	width: 1px;
+	background: rgba(255,255,255,0.2);
+}
+.r_parallel_2 .r_th:nth-child(3):before
+{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 100%;
+	height: 30px;
+	right: -1px;
+	width: 1px;
+	background: rgba(255,255,255,0.2);
 }
 
 .r_parallel_2 .r_th {
@@ -1684,6 +1742,106 @@ a.r_table img {
 	padding: 20px 0 10px;
 }
 
+.r_compare_2 .r_col_left,
+.r_compare_2 .r_col_right
+{
+	background: #ffffff;
+	align-self: stretch;
+	padding: 30px 20px 22px;
+	text-align: center;
+}
+.r_compare_2 .r_col_left .r_title, .r_compare_2 .r_col_right .r_title
+{
+	margin-bottom: 0;
+}
+
+
+.gradient_bg#r_radial-schema .r_sources .btn_sources svg
+{
+	fill: rgba(255, 255, 255, .5);
+}
+.gradient_bg#r_radial-schema .r_sources .r_sources_content
+{
+	color: #fefefe;
+	opacity: .5;
+}
+.gradient_bg#r_radial-schema .r_sources .btn_sources
+{
+	color: #fefefe;
+	opacity: .5;
+}
+
+@media only screen and (min-width: 1281px) {
+	.r_page .gradient_bg#r_radial-schema
+	{
+		padding-top: 150px;
+		padding-bottom: 168px;
+	}
+	.r_page .r_liberalism.gradient_bg#r_radial-schema:after
+	{
+		background: url(../img/bg_small_line_gr.png) no-repeat bottom right;
+	}
+	#r_factors_4 .r_factors_text
+	{
+		margin-bottom: 0;
+	}
+	#r_liberalism_2
+	{
+		padding-top: 165px;
+		padding-bottom: 150px;
+		position: relative;
+	}
+	#r_liberalism_2:after
+	{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 68px;
+		width: 100%;
+		background: url(../img/bg_small_line_gr2.png) no-repeat bottom right;
+		background-size: contain;
+	}
+	#representatives_2
+	{
+		padding: 150px 0;
+	}
+	#representatives_2 .r_factors_text
+	{
+		margin-bottom: 0;
+	}
+	#representatives_2.r_representatives_list .lr-container:after
+	{
+		display: none;
+	}
+	#r_factors_5, #r_factors_7, #r_factors_8, #r_factors_9
+	{
+		padding: 150px 0;
+	}
+	#r_liberalism_3
+	{
+		padding-bottom: 182px;
+	}
+	#r_factors_6
+	{
+		padding: 150px 0 100px;
+	}
+	#r_factors_7 .r_factors_text,
+	#r_factors_8 .r_factors_text
+	{
+		margin-bottom: 0;
+	}
+	#r_parallel_3
+	{
+		padding-top: 165px;
+		padding-bottom: 150px;
+	}
+	#r_parallel_3 .r_parallel_2_text:last-child
+	{
+		margin-bottom: 0;
+	}
+}
 
 @media only screen and (max-width: 1800px) {
 	.r_head-name {
@@ -1848,7 +2006,7 @@ a.r_table img {
 		padding-left: 0;
 		padding-right: 0;
 	}
-	#representatives .delegate:nth-child(3n+3), .delegate:last-child
+	#representatives .delegate:nth-child(3n+3)
 	{
 		margin-right: 30px;
 	}
@@ -2335,7 +2493,7 @@ a.r_table img {
 	}
 	.r_quotes .info-table .info-row
 	{
-		padding: 0;
+		padding: 0 20px;
 	}
 	.info-table .info-row .left-info > span.r_parallel_img, .info-table .info-row .right-info > span.r_parallel_img
 	{
@@ -2451,28 +2609,155 @@ a.r_table img {
 		padding-top: 15px;
 	}
 
-	#r_compare .r_compare_list:nth-child(2) .r_col_left,
-	#r_compare_2 .r_compare_list:nth-child(2) .r_col_left
+	/*#r_compare .r_compare_list:nth-child(2) .r_col_left,*/
+	/*#r_compare_2 .r_compare_list:nth-child(2) .r_col_left*/
+	/*{*/
+	/*	margin-bottom: 0;*/
+	/*}*/
+	/*#r_compare .r_compare_list:nth-child(2) .r_col_right,*/
+	/*#r_compare_2 .r_compare_list:nth-child(2) .r_col_right,*/
+	/*#r_compare .r_compare_list:nth-child(2) .r_compare_text:last-child,*/
+	/*#r_compare_2 .r_compare_list:nth-child(2) .r_compare_text:last-child*/
+	/*{*/
+	/*	display: none;*/
+	/*}*/
+	/*#r_compare .r_compare_list:nth-child(3),*/
+	/*#r_compare_2 .r_compare_list:nth-child(3)*/
+	/*{*/
+	/*	display: block !important;*/
+	/*}*/
+	/*#r_compare .r_compare_list:nth-child(3) .r_col_left,*/
+	/*#r_compare_2 .r_compare_list:nth-child(3) .r_col_left,*/
+	/*#r_compare .r_compare_list:nth-child(3) .r_compare_text:first-child,*/
+	/*#r_compare_2 .r_compare_list:nth-child(3) .r_compare_text:first-child*/
+	/*{*/
+	/*	display: none;*/
+	/*}*/
+
+	.r_compare .r_col_left, .r_compare .r_col_right
+	{
+		width: 50%;
+		padding: 20px 10px;
+		align-self: stretch;
+		margin-bottom: 0;
+	}
+	.r_compare .r_col_left .r_title, .r_compare .r_col_right .r_title
+	{
+		font-size: 16px;
+	}
+	.r_compare .r_col_left .r_compare_links, .r_compare .r_col_right .r_compare_links
+	{
+		font-size: 15px;
+		line-height: 1.3;
+	}
+	.r_compare_item, .r_compare_header
+	{
+		align-items: flex-start;
+	}
+	.r_compare_text
+	{
+		font-size: 16px;
+		line-height: 1.2;
+		width: 50%;
+		padding: 30px 5px;
+	}
+
+
+	#representatives.lr-headsofstate-list .country .country-content .cc-side .side-heads
+	{
+		justify-content: center;
+	}
+	#representatives .delegate:last-child, #representatives .delegate:nth-child(2n+2)
+	{
+		margin-right: 0 !important;
+	}
+
+	.r_quotes .analysis-info
+	{
+		position: relative;
+		left: -20px;
+		width: calc(100% + 40px);
+	}
+
+	#r_liberalism .r_persons .delegate:last-child .r_head-name
+	{
+		position: absolute;
+	}
+	.d-flex .r_persons
+	{
+		justify-content: center;
+	}
+	#r_factors_3 .delegate
+	{
+		margin-right: 0;
+	}
+
+	#r_parallel_2 .r_parallel_td:last-child,
+	#r_parallel_2 .r_parallel_td:last-child .r_parallel_item:last-child
+	{
+		padding-bottom: 0;
+	}
+	#r_parallel_2 .r_parallel_td
+	{
+		padding-bottom: 0;
+		padding-top: 0;
+	}
+
+	#r_difference
+	{
+		padding: 50px 0 0;
+		margin-bottom: -20px;
+	}
+	.r_difference_top
+	{
+		margin-bottom: 40px;
+	}
+	.r_page .r_parallel:after,
+	.r_page .r_liberalism.gradient_bg:after
+	{
+		display: none !important;
+	}
+	.lr-headsofstate-list .country:last-child
+	{
+		padding-bottom: 0;
+	}
+	#r_radial-schema
+	{
+
+	}
+	.r_difference, .r_representatives_list, .r_page .gradient_bg.r_parallel, .r_history, .r_factors, .r_compare, .r_quotes,
+	#r_parallel_2, #r_parallel_3, #parallels, .r_page .gradient_bg
+	{
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	#r_factors_4 .r_factors_text,
+	#r_factors_7 .r_factors_text
 	{
 		margin-bottom: 0;
 	}
-	#r_compare .r_compare_list:nth-child(2) .r_col_right,
-	#r_compare_2 .r_compare_list:nth-child(2) .r_col_right,
-	#r_compare .r_compare_list:nth-child(2) .r_compare_text:last-child,
-	#r_compare_2 .r_compare_list:nth-child(2) .r_compare_text:last-child
+	#r_liberalism_2 .r_title--ss
+	{
+		margin-top: 40px;
+	}
+
+	#r_factors_6 .delegate:last-child
+	{
+		margin-bottom: 0;
+	}
+
+	.lr-footer
+	{
+		padding: 50px 0;
+	}
+	.lr-footer:before
 	{
 		display: none;
 	}
-	#r_compare .r_compare_list:nth-child(3),
-	#r_compare_2 .r_compare_list:nth-child(3)
+
+	#analysis_1, #r_factors, #r_liberalism, #r_factors_2, #r_factors_3, #r_factors_4, #r_liberalism_2,
+	#r_liberalism_3
 	{
-		display: block !important;
-	}
-	#r_compare .r_compare_list:nth-child(3) .r_col_left,
-	#r_compare_2 .r_compare_list:nth-child(3) .r_col_left,
-	#r_compare .r_compare_list:nth-child(3) .r_compare_text:first-child,
-	#r_compare_2 .r_compare_list:nth-child(3) .r_compare_text:first-child
-	{
-		display: none;
+		padding-top: 40px;
 	}
 }
