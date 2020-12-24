@@ -1126,8 +1126,10 @@ a.r_table img {
 }
 .r_factors_text span
 {
-	color: #3c3d43;
+	color: rgba(60, 61, 67, 0.5);
 	font-size: 14px;
+	display: block;
+	text-align: center;
 }
 
 /*compare*/
@@ -1458,7 +1460,7 @@ a.r_table img {
 	padding-bottom: 150px;
 }
 .r_quotes .info-table .info-row {
-	padding: 50px 0;
+	padding: 15px 0;
 }
 .r_quotes .r_title--ss {
 	margin-bottom: 66px;
@@ -1747,7 +1749,7 @@ a.r_table img {
 {
 	background: #ffffff;
 	align-self: stretch;
-	padding: 30px 20px 22px;
+	padding: 45px 20px;
 	text-align: center;
 }
 .r_compare_2 .r_col_left .r_title, .r_compare_2 .r_col_right .r_title
