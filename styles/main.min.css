@@ -5028,6 +5028,38 @@ a
     text-decoration: none !important;
 }
 
+.lr-authors
+{
+    background:#f4f4f4;
+    padding-bottom: 40px;
+}
+.lr-authors > div
+{
+    max-width: 1124px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.lr-authors > div .copywriter,
+.lr-authors > div .visual
+{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+
+    color: #3c3d43;
+}
+.lr-authors > div .copywriter
+{
+    margin-right: 100px;
+}
+.lr-authors > div .copywriter strong,
+.lr-authors > div .visual strong
+{
+    font-family: MuseoSansCyrl-700, sans-serif;
+}
+
 
 @media only screen and (min-width: 1441px)
 {
@@ -5193,6 +5225,11 @@ a
         height: 30px;
         width: 31px;
         margin-right: 22px;
+    }
+
+    .lr-authors > div .copywriter, .lr-authors > div .visual
+    {
+        font-size: 16px;
     }
 }
 
@@ -5908,6 +5945,26 @@ a
         bottom: 5px;
         background: url(../img/icons/go-right-black.svg) no-repeat center;
         background-size: 30px auto;
+    }
+
+    .lr-authors
+    {
+        padding-bottom: 20px;
+    }
+    .lr-authors > div
+    {
+        padding: 0 20px;
+        justify-content: flex-start;
+    }
+    .lr-authors > div .copywriter
+    {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .lr-authors > div .copywriter, .lr-authors > div .visual
+    {
+        font-size: 16px;
+        line-height: 1;
     }
 }
 
